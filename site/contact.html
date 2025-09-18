@@ -4,11 +4,63 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CV de Foy Alexis</title>
+    <title>CV de Foy Alexis - Page de contact</title>
     <meta name="description" content="CV de Foy Alexis, développeur web et web mobile en formation">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
-    
+    <header>
+        <h1>FOY Alexis, Développeur Web et Web Mobile en Formation</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" name="name" required>
+            <label for="prénom">Prénom :</label>
+            <input type="text" name="prénom" required>
+            <label for="email">Email :</label>
+            <input type="email" name="email" required>
+            <fieldset>
+                <legend>vous êtes :</legend>
+                <input type="radio" name="genre" value="homme" checked>
+                <label for="homme">Un homme</label>
+                <input type="radio" name="genre" value="femme">
+                <label for="femme">Une femme</label>
+                <input type="radio" name="genre" value="autre">
+                <label for="autre">Autre</label>
+            </fieldset>
+            <fieldset>
+                <legend>Compétences :</legend>
+                <input type="checkbox" name="competence" value="javascript">
+                <label for="javascript">JavaScript</label>
+                <input type="checkbox" name="competence" value="php">
+                <label for="php">PHP</label>
+                <input type="checkbox" name="competence" value="ruby">
+                <label for="ruby">Ruby</label>
+                <input type="checkbox" name="competence" value="C#">
+                <label for="C#">C#</label>
+                <input type="checkbox" name="competence" value="react">
+                <label for="react">React</label>
+            </fieldset>
+            <label for="story">Envoyez nous un message :</label>
+            <textarea name="message" rows="8" cols="200">
+            Votre message ici...</textarea>
+            <select form required name="metier">
+                <option>Concepteur</option>
+                <option selected>Développeur</option>
+                <option>Intégrateur</option>
+            </select>
+            <br>
+            <input type="submit">
+        </form>
+    </main>
 </body>
+
 </html>
