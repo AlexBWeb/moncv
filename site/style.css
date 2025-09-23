@@ -22,8 +22,8 @@ body {
     gap: 8px;
     min-height: 0;
     min-width: 0;
-    width: ; 
-    height: 150%; 
+    width: ;
+    height: 150%;
     margin: auto;
 }
 
@@ -40,7 +40,8 @@ body {
     grid-column-start: 4;
     overflow: auto;
     min-width: 0;
-    display: flex; /*ajout de style et placement des éléments dans le bloc*/
+    display: flex;
+    /*ajout de style et placement des éléments dans le bloc*/
     justify-content: center;
     align-items: center;
     background-color: #1e1e2f;
@@ -94,7 +95,7 @@ body {
     background-color: #02031b;
     color: #fff;
     transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*Style des sections principales*/
@@ -105,11 +106,13 @@ h2 {
     color: #1e1e2f;
 }
 
-.child3, .child4, .child5 {
+.child3,
+.child4,
+.child5 {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -119,14 +122,17 @@ a {
     font-weight: bold;
     transition: 0.3s;
 }
+
 a:hover {
     color: #0e0736;
 }
+
 ul li {
     position: relative;
     padding-left: 12px;
     margin-bottom: 8px;
 }
+
 ul li::before {
     content: "•";
     position: absolute;
@@ -144,13 +150,39 @@ ul li::before {
         padding: 10px;
     }
 
-    .child1, 
-    .child2, 
-    .child3, 
-    .child4, 
+    .child1,
+    .child2,
+    .child3,
+    .child4,
     .child5 {
         grid-column: 1;
         grid-row: auto;
         width: 100%;
     }
+/*enlever les puces pour la version mobile*/
+    ul li::before {
+        display: none;
+    }
+
+    ul li {
+        padding-left: 0;
+    }
+}
+/*style des barres de progression pour les compétences*/
+article h2 {
+    margin-bottom: 10px;
+    color: #1e1e2f;
+}
+
+.bar {
+    background: #e0e0e0;
+    border-radius: 6px;
+    height: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background: #4ecdc4;
 }
